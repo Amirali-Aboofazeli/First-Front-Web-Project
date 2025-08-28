@@ -1,0 +1,478 @@
+.carousel-item img {
+  width: 100%;
+  /* عرض کامل */
+  height: 400px;
+  /* ارتفاع مشخص */
+  object-fit: cover;
+  /* تصاویر را به صورت پوشش کامل نمایش می‌دهد */
+}
+
+h1 {
+  display: inline-block;
+}
+
+
+
+
+
+
+#telegram-icon :hover {
+  color: rgb(34, 158, 217);
+}
+
+#whatsapp-icon :hover {
+  color: #25d366;
+}
+
+#linkedin-icon :hover {
+  color: #0077B5;
+}
+
+
+
+
+
+
+
+footer {
+  background: linear-gradient(135deg, #0481d4, #1a1a2e);
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer-bottom:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* افکت‌های اضافی برای زیبایی */
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 219, 222, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+footer:hover::before {
+  animation: pulse 8s infinite alternate;
+}
+
+
+
+#instagram-icon {
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  /* حالت پیشفرض */
+  color: #fff;
+  /* یا رنگ دلخواه شما */
+}
+
+#instagram-icon:hover {
+  transform: scale(1.2);
+  /* افکت گرادینت اینستاگرام */
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: instagram-gradient 2s ease infinite;
+}
+
+@keyframes instagram-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+#telegram-icon {
+  transition: transform 0.3s ease;
+  /* انیمیشن نرم */
+  font-size: 16px;
+  /* اندازه اولیه */
+}
+
+#telegram-icon:hover {
+  transform: scale(1.2);
+  /* بزرگ شدن 20% */
+}
+
+
+
+
+#whatsapp-icon {
+  transition: transform 0.3s ease;
+  /* انیمیشن نرم */
+  font-size: 16px;
+  /* اندازه اولیه */
+}
+
+#whatsapp-icon:hover {
+  transform: scale(1.2);
+  /* بزرگ شدن 20% */
+}
+
+
+#linkedin-icon {
+  transition: transform 0.3s ease;
+  /* انیمیشن نرم */
+  font-size: 16px;
+  /* اندازه اولیه */
+}
+
+#linkedin-icon:hover {
+  transform: scale(1.2);
+  /* بزرگ شدن 20% */
+}
+
+
+
+
+
+
+/* سبک اصلی آکاردئون */
+#faqAccordion {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* استایل آیتم‌های آکاردئون */
+.accordion-item {
+  transition: all 0.4s ease;
+  border-left: 4px solid transparent !important;
+}
+
+.accordion-item:hover {
+  transform: translateX(5px);
+  border-left: 4px solid #0481d4 !important;
+  box-shadow: 0 5px 15px rgb(7, 196, 221, 0.2) !important;
+}
+
+/* دکمه آکاردئون */
+.accordion-button {
+  background: linear-gradient(to right, #f9f9f9, #ffffff) !important;
+  color: #333 !important;
+  padding: 1.2rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(to right, #0481d4, #07c4dd) !important;
+  color: white !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(78, 84, 200, 0.25) !important;
+}
+
+.accordion-button::after {
+  transition: all 0.4s ease !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+  transform: rotate(180deg) scale(1.2);
+}
+
+/* بدنه آکاردئون */
+.accordion-body {
+  background: linear-gradient(to right, #f8f9fa, #ffffff) !important;
+  padding: 1.5rem !important;
+  line-height: 1.7;
+  border-top: 1px solid rgba(78, 84, 200, 0.1) !important;
+}
+
+/* آیکون سوالات */
+.fa-question-circle {
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .fa-question-circle {
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+/* انیمیشن باز و بسته شدن */
+.accordion-collapse {
+  transition: all 0.4s ease !important;
+}
+
+/* افکت‌های ویژه */
+.accordion-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.accordion-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(78, 84, 200, 0.1), transparent);
+  transition: all 0.6s ease;
+}
+
+.accordion-item:hover::before {
+  left: 100%;
+}
+
+/* رسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .accordion-button {
+    padding: 1rem !important;
+    font-size: 0.95rem;
+  }
+
+  .accordion-body {
+    padding: 1rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* استایل پایه دکمه */
+#Go-Up {
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  z-index: 99;
+  transition: all 0.5s ease;
+  opacity: 0;
+  width: 56px;
+  height: 56px;
+}
+
+/* حالت نمایش */
+#Go-Up.show {
+  bottom: 40px;
+  opacity: 1;
+}
+
+/* استایل لینک */
+#Go-Up a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #6366f1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* استایل آیکون فلش */
+#Go-Up .fa-arrow-up {
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* افکت hover ساده و زیبا */
+#Go-Up a:hover {
+  background: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
+}
+
+#Go-Up a:hover .fa-arrow-up {
+  transform: translateY(-2px);
+}
+
+/* افکت فعال */
+#Go-Up a:active {
+  transform: scale(0.95);
+  background: #4338ca;
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+  #Go-Up {
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #Go-Up.show {
+    bottom: 20px;
+  }
+
+  #Go-Up .fa-arrow-up {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.search-box-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.search-btn,
+.clear-btn {
+  transition: all 0.2s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  color: #0d6efd !important;
+}
+
+.clear-btn {
+  color: #6c757d;
+}
+
+.clear-btn:hover {
+  color: #dc3545 !important;
+}
+
+.search-results {
+  display: none;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.5rem !important;
+}
+
+.search-result-item {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f8f9fa;
+}
+
+.search-result-item.highlight {
+  background-color: #e9ecef;
+}
+
+.search-match {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.no-results {
+  padding: 0.75rem 1.25rem;
+  color: #6c757d;
+}
+
+
+
+#user-panel :hover {
+  color: #0481d4;
+}
+
+#contact-us :hover {
+  color: #0481d4;
+}
+
+#user-panel {
+  transition: transform 0.3s ease;
+  /* انیمیشن نرم */
+  font-size: 16px;
+  /* اندازه اولیه */
+}
+
+#user-panel:hover {
+  transform: scale(1.2);
+  /* بزرگ شدن 20% */
+}
+
+
+
+
+#contact-us {
+  transition: transform 0.3s ease;
+  /* انیمیشن نرم */
+  font-size: 16px;
+  /* اندازه اولیه */
+}
+
+#contact-us:hover {
+  transform: scale(1.2);
+  /* بزرگ شدن 20% */
+}
+
+#contactUs-p1 :hover {
+  color: #d3af37;
+}
+
+#contactUs-p2 :hover {
+  color: #d3af37;
+}
+
+
+#contactUs-p3 :hover {
+  color: #d3af37;
+}
+
+
+
+
+.text-hover-grow {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.text-hover-grow:hover {
+  transform: scale(1.05);
+  font-weight: 500;
+}
